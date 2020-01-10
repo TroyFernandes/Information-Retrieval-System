@@ -1,6 +1,8 @@
 # Example Information Retrieval System
 This project is a sample IR System using the CACM document collection. The [Boost](https://www.boost.org/) library is used to serialize the datastructure (map) holding the document information (the inverted index)
 
+The [PageRank](https://en.wikipedia.org/wiki/PageRank) algorithm is used to calculate the scores while the index is being created, and is used to rank the results after the user submits a query.
+
 The document collection used is the [CACM Collection](http://ir.dcs.gla.ac.uk/resources/test_collections/cacm/)
 
 The program is split into three different parts:
