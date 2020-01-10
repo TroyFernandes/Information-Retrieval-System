@@ -37,9 +37,9 @@ Example: ``invert.exe --nonormalize --decay 0.93 --iterations 10``
 
 3. Output Files:
 
-- lookup_table.dat : a helper file needed for eval 3 and search
-- pagerank_scores.dat : binary formatted pagerank scores needed for eval3 and search
-- postings.dat : a binary formatted postings file needed for eval3 and search
+- lookup_table.dat : a helper file needed for ``eval`` and ``search``
+- pagerank_scores.dat : binary formatted pagerank scores needed for ``eval`` and ``search``
+- postings.dat : a binary formatted postings file needed for ``eval`` and ``search``
 - pagerank_scores.txt : a readable text file with all the pagerank scores. Not needed by any other
     programs
 
