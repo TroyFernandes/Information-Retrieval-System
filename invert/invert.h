@@ -1,0 +1,10 @@
+bool readStopWords(std::string file, std::unordered_set<std::string> &stopwords);
+void serializeMap(std::map < std::string, std::tuple<int, std::vector<std::tuple<int, int, std::string, std::string, int, std::string>>>> & database);
+bool doesFileExist(const std::string& name);
+void printVec(std::string description, std::vector < double >& vec);
+void calculatePageRank(std::string filePath);
+void serializePageRankScore(std::vector<double> &scores);
+void invert(std::string filePath);
+void serializeLookupMap(std::map<int, int>& lookup);
+std::vector<double> normalize(std::vector<double> &arr);
+void writeResults(std::vector<double> &arr);

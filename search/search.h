@@ -1,0 +1,10 @@
+std::vector<std::vector<double>> buildTFIDF(std::map < std::string, std::tuple<int, std::vector<std::tuple<int, int, std::string, std::string, int, std::string>>>> dict, int docNum);
+int countNonZero(const std::vector<double>& elems);
+std::map<double, int> search(std::string originalQ, std::string query, std::map < std::string, std::tuple<int, std::vector<std::tuple<int, int, std::string, std::string, int, std::string>>>> & database);
+bool doesFileExist(const std::string& name);
+std::vector<double> tfIDFQuery(std::string query, int wordCount, std::map < std::string, std::tuple<int, std::vector<std::tuple<int, int, std::string, std::string, int, std::string>>>> &dict);
+std::map<double, int> cosineSimilarity(std::vector<std::vector<double>> docVec, std::vector<double> qVec);
+std::map<double, int> topK(std::map<double, int> cosineSimMap, int K);
+void meanAveragePrecision(std::vector<int> knownRelevant, std::vector<int> returnedSet, std::vector<int> common);
+void readPRScores(std::vector<double>& scores);
+void readLookupTable(std::map<int, int>& lookupTable);
